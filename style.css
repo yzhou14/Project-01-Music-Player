@@ -1,0 +1,305 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, #da3316, #aa0000, #6a117d, #503ba6);
+    background-size: 800% 800%;
+
+    -webkit-animation: background 12s ease infinite;
+    -moz-animation: background 12s ease infinite;
+    -o-animation: background 12s ease infinite;
+    animation: background 12s ease infinite;
+}
+
+@-webkit-keyframes background {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-moz-keyframes background {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@-o-keyframes background {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+@keyframes background {
+    0%{background-position:48% 0%}
+    50%{background-position:53% 100%}
+    100%{background-position:48% 0%}
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.circle {
+    position: relative;
+    width: 610px;
+    height: 610px;
+    border-radius: 50%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.picture {
+   position: absolute;
+   width: 550px;
+   height: 550px;
+   background-image: url(image_02.jpeg);
+   background-size: cover;
+   background-position-x: -60px;
+   border-radius: 50%;
+   animation-name: image;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-direction: normal;
+   animation-play-state: running;
+   animation-iteration-count: infinite;
+   animation-delay: 0s;
+}
+
+@keyframes image {
+    0% {
+        background-image: url(image_02.jpeg);
+    }
+
+    20% {
+        background-image: url(image_02.jpeg);
+    }
+
+    50% {
+        background-image: url(image_01.jpeg);
+    }
+
+    90% {
+        background-image: url(image_02.jpeg);
+    }
+
+    100% {
+       background-image: url(image_02.jpeg);
+    }
+}
+
+
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 23s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    color: rgb(255, 240, 240);
+    transform-origin: 0 305px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.text span:hover {
+    color: rgb(193, 244, 252);
+}
+
+.audio {
+    margin-left: 5%;
+}
+
+.audio:hover {
+    transform: scale(1.2);
+}
+
+
+
+text {
+    fill: white;
+    font-size: 26px;
+    font-family: 'Liu Jian Mao Cao', cursive;
+  }
+
+.box1 {
+    background-color: transparent;
+    width: 400px;
+    height:1080px;
+    min-height: 100vh;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+    
+        background: linear-gradient(180deg, #5d44be, #4c1c8b, #b62828, #ce5638);
+        background-size: 800% 800%;
+    
+        -webkit-animation: background 12s ease infinite;
+        -moz-animation: background 12s ease infinite;
+        -o-animation: background 12s ease infinite;
+        animation: background 12s ease infinite;
+    }
+    
+    @-webkit-keyframes background {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @-moz-keyframes background {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @-o-keyframes background {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    @keyframes background {
+        0%{background-position:48% 0%}
+        50%{background-position:53% 100%}
+        100%{background-position:48% 0%}
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-around;
+        min-height: 100vh;
+    }
+
+    .circle {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        /* background-color: white; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .picture {
+       position: absolute;
+       width: 350px;
+       height: 350px;
+       background-image: url(image_02.jpeg);
+       background-size: cover;
+       background-position-x: -60px;
+       border-radius: 50%;
+       animation-name: image;
+       animation-duration: 30s;
+       animation-timing-function: linear;
+       animation-direction: normal;
+       animation-play-state: running;
+       animation-iteration-count: infinite;
+       animation-delay: 0s;
+    }
+    
+    @keyframes image {
+        0% {
+            background-image: url(image_02.jpeg);
+        }
+    
+        20% {
+            background-image: url(image_02.jpeg);
+        }
+    
+        50% {
+            background-image: url(image_01.jpeg);
+        }
+    
+        90% {
+            background-image: url(image_02.jpeg);
+        }
+    
+        100% {
+           background-image: url(image_02.jpeg);
+        }
+    }
+    
+    
+    
+    .text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: rotateText 23s linear infinite;
+    }
+    
+    @keyframes rotateText {
+        0% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .text span {
+        position: absolute;
+        left: 50%;
+        font-size: 0.9em;
+        color: rgb(255, 240, 240);
+        transform-origin: 0 200px;
+        font-family: 'Abril Fatface', cursive;
+    }
+    
+    .text span:hover {
+        color: rgb(250, 219, 118);
+    }
+    
+    .audio {
+        margin-top: 60px;
+    }
+    
+    .audio:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    text {
+        fill: rgb(255, 240, 240);
+        font-size: 26px;
+        font-family: 'Liu Jian Mao Cao', cursive;
+      }
+    
+    .box1 {
+        background-color: transparent;
+        width: 400px;
+        height:1080px;
+        min-height: 100vh;
+        position: relative;
+        margin-left: 100px
+    }
+}
+
